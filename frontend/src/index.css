@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F6F4EF;
+  --surface: #FFFFFF;
+  --ink: #1C1B18;
+  --muted: #7A776E;
+  --border: #E7E3D9;
+  --accent: #3F6B52;
+  --accent-soft: #8FD9B3;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+/* Safe-area padding for notches / home indicators on installed PWAs */
+.safe-top {
+  padding-top: max(env(safe-area-inset-top), 0px);
+}
+.safe-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom), 0px);
+}

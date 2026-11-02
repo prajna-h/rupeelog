@@ -1,0 +1,15 @@
+# backend
+backend/venv/
+backend/expenses.db
+backend/__pycache__/
+backend/**/__pycache__/
+*.pyc
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# editors / os
+.DS_Store
